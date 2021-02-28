@@ -21,10 +21,10 @@ export const todosCountState = selector({
   }
 })
 
-// const deleteTodo: Todo[] = (prevTodos: Todo[], id: number) => {
-//   return prevTodos.filter((todo) => todo.id !== id)
-// }
+const deleteTodo: Todo[] = (prevTodos: Todo[], id: number) => {
+  return prevTodos.filter((todo) => todo.id !== id)
+}
 
-// export const actions = {
-//   deleteTodo
-// }
+export const actions = {
+  deleteTodo
+}
