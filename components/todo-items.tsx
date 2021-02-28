@@ -6,7 +6,7 @@ interface Props {
   todo: string
 }
 
-const TodoItem: FC<Props> = ({ todo }) => {
+const TodoItem: FC<Props> = ({ todo }: Props) => {
   const setTodos = useSetRecoilState(todosState)
   const onClick = () => {
     setTodos((prevTods) => {
